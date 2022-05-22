@@ -10,8 +10,7 @@
 
     &__item
         list-style-type: none
-        opacity: 80%
-        font-size: 22px
+        font-size: 23px
         @include medium
         cursor: pointer
 
@@ -20,9 +19,12 @@
             margin-right: 31px
 
         &:hover
-            opacity: 100%
-            font-size: 23px
             transition: 0.4s
+            color: #3577B4
+
+            & a
+                transition: 0.4s
+                color: #3577B4
         
         & a
             color: $white

@@ -7,7 +7,9 @@
 
     &__wrapper
 
-        padding: 100px 5% 90px 5%
+        padding: $grid
+        padding-top: 100px
+        padding-bottom: 90px
 
         & h1
             @include bold
@@ -16,7 +18,7 @@
             text-transform: uppercase
             color: $white
 
-            width: 50vw
+            width: 55vw
         & p
             @include medium
             font-size: 28px
@@ -51,6 +53,7 @@
             background-color: $white
             border: 2px solid $white
             transition: 0.4s
+            color: $blue
     &-2
         background-color: $white
         background-image: none
@@ -61,6 +64,7 @@
             background-color: $blue
             border: 2px solid $blue
             transition: 0.4s
+            color: $white
 
 
 @keyframes arrow

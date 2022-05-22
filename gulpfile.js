@@ -40,7 +40,9 @@ gulp.task('jade', function() {
 
 gulp.task('watch', function() {
     gulp.watch('src/sass/*.+(scss|sass)', gulp.parallel('styles'))
+    gulp.watch('src/sass/components/*.+(scss|sass)', gulp.parallel('styles')).on('change', browserSync.reload)
     gulp.watch('src/jade/*.jade', gulp.parallel('jade'))
+    gulp.watch('src/img/*.+(png|jpg|jpeg|webp|svg').on('change', browserSync.reload);
     gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
