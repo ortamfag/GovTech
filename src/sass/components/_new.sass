@@ -1,0 +1,34 @@
+.new
+    padding: $grid
+    background-color: $blue
+
+    &__wrapper
+        color: $pink
+
+    &__inner
+        display: grid
+        grid-template-columns: 50% 50%
+        
+
+        &-item:nth-child(1)
+            grid-area: 1 / 1 / 2 / 2
+        
+        &-item:nth-child(2)
+            grid-area: 2 / 1 / 3 / 2
+        
+        &-item:nth-child(3)
+            grid-area: 2 / 1 / 3 / 2
+
+        &-item
+
+            & h2
+                font-size: 35px
+                color: $white
+                @include bold
+
+            & p
+                color: $white
+                @include roboto-l
+                font-size: 25px
+            
+             
