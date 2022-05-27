@@ -64,3 +64,21 @@ fourthCircle.addEventListener('mouseout', () => fourthText.classList.remove('pla
 fourthCircle.addEventListener('mouseout', () => firstCircle.classList.remove('place__inner-item-disactive'))
 fourthCircle.addEventListener('mouseout', () => secondCircle.classList.remove('place__inner-item-disactive'))
 fourthCircle.addEventListener('mouseout', () => thirdCircle.classList.remove('place__inner-item-disactive'))
+
+
+const moscow = document.querySelector('#moscow')
+const moscowFirst = document.querySelector('#moscowFirst')
+const moscowSecond = document.querySelector('#moscowSecond')
+const moscowThird = document.querySelector('#moscowThird')
+const moscowFourth = document.querySelector('#moscowFourth')
+const moscowFifth = document.querySelector('#moscowFifth')
+const moscowSixth = document.querySelector('#moscowSixth')
+const moscowSeventh = document.querySelector('#moscowSeventh')
+
+moscowFirst.addEventListener('click', () => moscowFirst.classList.toggle('highlight'))
+moscowSecond.addEventListener('click', () => moscowSecond.classList.toggle('highlight'))
+moscowThird.addEventListener('click', () => moscowThird.classList.toggle('highlight'))
+moscowFourth.addEventListener('click', () => moscowFourth.classList.toggle('highlight'))
+moscowFifth.addEventListener('click', () => moscowFifth.classList.toggle('highlight'))
+moscowSixth.addEventListener('click', () => moscowSixth.classList.toggle('highlight'))
+moscowSeventh.addEventListener('click', () => moscowSeventh.classList.toggle('highlight'))
