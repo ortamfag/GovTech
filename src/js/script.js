@@ -82,3 +82,26 @@ moscowFourth.addEventListener('click', () => moscowFourth.classList.toggle('high
 moscowFifth.addEventListener('click', () => moscowFifth.classList.toggle('highlight'))
 moscowSixth.addEventListener('click', () => moscowSixth.classList.toggle('highlight'))
 moscowSeventh.addEventListener('click', () => moscowSeventh.classList.toggle('highlight'))
+
+// modals 
+const makeModal = modalSel => {
+	const modalEl = document.querySelector(modalSel + 'Popup');
+		btnEl = document.querySelector(modalSel + '__preview'),
+		closeEl = document.querySelector(modalSel + 'Cross')
+		closeBody = document.querySelector('.popup')
+		bg = document.querySelector(modalSel + 'Bg')
+		
+
+	btnEl.addEventListener('click', () => modalEl.classList.add('open'));
+	closeEl.addEventListener('click', () => modalEl.classList.remove('open'));
+	bg.addEventListener('click', () => modalEl.classList.remove('open'));
+}
+
+makeModal('#trend-1')
+makeModal('#trend-2')
+makeModal('#trend-3')
+makeModal('#trend-4')
+makeModal('#trend-5')
+makeModal('#trend-6')
+
+
