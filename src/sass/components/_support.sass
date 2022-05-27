@@ -1,6 +1,6 @@
-.new
+.support
     padding: $grid
-    background-color: $blue
+    background-color: $white
     position: relative
 
 
@@ -27,37 +27,28 @@
     &__inner
         display: grid
         grid-template-columns: 50% 50%
-        grid-row-gap: 20px
+        grid-row-gap: 40px
         grid-column-gap: 40px
         margin-bottom: 50px
         
 
-        &-item:nth-child(1)
-            grid-area: 1 / 1 / 2 / 2
-        
-        &-item:nth-child(2)
-            grid-area: 2 / 1 / 3 / 2
-            align-self: flex-end
-        
-        &-item:nth-child(3)
-            grid-area: 1 / 2 / 3 / 3
 
         &-item
 
             & h2
                 font-size: 35px
-                color: $white
+                color: $blue
                 @include bold
                 margin-bottom: 20px
 
             & p, ul li
-                color: $white
+                color: $blue
                 @include roboto-l
                 font-size: 25px
                 width: 90%
 
             & ul li
-                color: $white
+                color: $blue
                 @include roboto-l
                 font-size: 25px
                 margin-bottom: 20px
@@ -67,12 +58,10 @@
 
     &__popup
         display: flex
+        justify-content: space-between
         align-items: center
 
         &-item
-            width: 40vw 
-            
-            
             background: #B77AD9
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
 
@@ -80,7 +69,7 @@
                 color: $white
                 @include bold
                 font-size: 30px
-                margin-left: 10px
+
 
             & p
                 color: $white
@@ -91,8 +80,9 @@
 
         &-title
             display: flex
-            align-items: center
+            align-items: flex-start
             margin: 30px 30px
+            flex-direction: column
 
             & img
                 margin-right: 20px
@@ -102,36 +92,64 @@
             display: flex
             justify-content: flex-end
 
+            & img:nth-child(1)
+                display: block
+            & img:nth-child(2)
+                display: none
+                
+                
+
         &-button
             margin: 40px 0px
             
             & button
-                background-color: $white    
-                color: $pink
+                background-color: $blue
+                color: $white
 
                 &:hover
                     transition: 0.4s
-                    background-color: $pink
-                    color: $white
+                    background-color: $white
+                    color: $blue
 
 
         
 
 
-#newFirst
+#supportFirst
     background-color: #39BBDF
+    width: 25%
+    margin-right: 15px
 
-#newSecond
+#supportSecond
     background-color: $pink
-    margin-left: 80px
+    width: 25%
+    margin-right: 15px
+
+#supportThird
+    background-color: #39BBDF
+    width: 50%
+
+@media (max-width: 940px)
+    .support__popup-item
+
+        & h2
+            font-size: 23px
+
+        & p
+            font-size: 20px
 
 @media (max-width: 815px)
+    #supportFirst
+        width: 100%
 
-    #newSecond
-        background-color: $pink
-        margin-left: 0px
+    #supportSecond
+        width: 100%
 
-    .new
+    #supportThird
+        width: 100%
+        grid-area: 2 / 1 / 3 / 3
+
+    .support
         &__wrapper h1
             font-size: 35px
 
@@ -164,14 +182,41 @@
                     font-size: 20px
 
         &__popup
-            flex-direction: column
+            display: grid
+            grid-template-columns: 45% 45%
+            grid-gap: 20px
+
+            &-title
+                align-items: center
+                
+                & img
+                    margin: 0 auto
+
+                & h2
+                    margin-top: 10px
+                    text-align: center
+
 
             &-item
                 width: auto
                 margin-bottom: 30px
 
+                & p
+                    text-align: center
+
+
             &-button button
                 width: 100%
+
+            &-arrow
+                margin-top: 25px
+                justify-content: center
+
+                & img:nth-child(1)
+                    display: none
+                & img:nth-child(2)
+                    display: block
+                    
 
         &__aside
 
@@ -182,6 +227,14 @@
                 
                 &:nth-child(2)
                     display: block
+
+
+@media (max-width: 430px)
+    #supportFirst
+        height: 30vh
+
+    #supportSecond
+        height: 30vh
                     
                 
 
