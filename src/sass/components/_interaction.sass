@@ -1,4 +1,4 @@
-.new
+.interaction
     padding: $grid
     background-color: $blue
     position: relative
@@ -27,20 +27,11 @@
     &__inner
         display: grid
         grid-template-columns: 50% 50%
-        grid-row-gap: 20px
+        grid-row-gap: 40px
         grid-column-gap: 40px
         margin-bottom: 50px
         
 
-        &-item:nth-child(1)
-            grid-area: 1 / 1 / 2 / 2
-        
-        &-item:nth-child(2)
-            grid-area: 2 / 1 / 3 / 2
-            align-self: flex-end
-        
-        &-item:nth-child(3)
-            grid-area: 1 / 2 / 3 / 3
 
         &-item
 
@@ -118,20 +109,20 @@
         
 
 
-#newFirst
+#interactionFirst
     background-color: #39BBDF
 
-#newSecond
+#interactionSecond
     background-color: $pink
     margin-left: 80px
 
 @media (max-width: 815px)
 
-    #newSecond
+    #interactionSecond
         background-color: $pink
         margin-left: 0px
 
-    .new
+    .interaction
         &__wrapper h1
             font-size: 35px
 
