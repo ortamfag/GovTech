@@ -25,9 +25,8 @@
         background-color: $white
         color: #000
         max-width: 90%
-        padding: 25px 50px 0px 50px
+        padding: 25px 50px 25px 50px
         position: relative
-        border-radius: 40px
 
     &__wrapper
         display: flex
@@ -81,8 +80,8 @@
         cursor: pointer
         
         & img
-            width: 45px !important
-            height: 45px !important
+            width: 30px !important
+            height: 30  px !important
 
 .open
     opacity: 1
@@ -99,3 +98,36 @@
     z-index: 0
 
     
+
+
+.popup
+
+    &__wrapper
+        max-height: 100vh
+        width: 90%
+
+        & ul li
+            color: #000000
+            @include roboto
+            font-size: 20px
+            line-height: 100%
+            margin-bottom: 10px
+
+    &__countries
+        flex-direction: column
+        color: $blue
+        & h2
+            @include bold
+            font-size: 30px
+            margin-bottom: 10px
+            
+        & p
+            @include roboto
+            font-size: 20px
+            margin-bottom: 10px
+
+        & ul li
+            color: $blue
+
+    &__content
+        width: 80%
