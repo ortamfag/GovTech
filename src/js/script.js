@@ -97,6 +97,11 @@ const makeModal = modalSel => {
 	bg.addEventListener('click', () => modalEl.classList.remove('open'));
 }
 
+makeModal('#smart')
+makeModal('#urban')
+makeModal('#gov')
+makeModal('#civic')
+
 makeModal('#trend-1')
 makeModal('#trend-2')
 makeModal('#trend-3')
@@ -118,3 +123,14 @@ makeModal('#spain')
 makeModal('#mexico')
 makeModal('#germany')
 makeModal('#usaSecond')
+
+
+//burger
+const burger = document.querySelector("#burger")
+const sidebar = document.querySelector("#sidebar")
+
+
+burger.addEventListener('click', () => burger.classList.toggle('nav__burger-active'))
+burger.addEventListener('click', () => sidebar.classList.toggle('nav__sidebar-active'))
+
+//burger
